@@ -39,7 +39,7 @@ public class Validator {
                     int minValue = minLength.minLength();
                     String value = (String) field.get(address);
                     if (value.length() < minValue) {
-                        errors.put(field.getName(), List.of("length less than 4"));
+                        errors.put(field.getName(), List.of("length less than " + minValue));
                     }
                 }
 
