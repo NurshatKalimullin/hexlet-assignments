@@ -99,3 +99,5 @@
 * В директории с домашним заданием выполните последовательно команды, как показано в [руководстве по деплою](https://devcenter.heroku.com/articles/create-a-java-web-application-using-embedded-tomcat#deploy-to-heroku)
 * После открытия задеплоенного приложения в браузере убедитесь, что оно работает.
 * При сдаче домашнего задания укажите ссылку на задеплоенное приложение.
+
+URL to open the app in a browser https://calm-sea-36552.herokuapp.com/
