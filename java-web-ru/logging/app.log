@@ -1,0 +1,38 @@
+Oct 31, 2022 9:53:12 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-auto-1"]
+Oct 31, 2022 9:53:12 PM org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+INFO: Using a shared selector for servlet write/read
+Oct 31, 2022 9:53:12 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Oct 31, 2022 9:53:12 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/8.5.69]
+Oct 31, 2022 9:53:12 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-auto-1-57758"]
+Oct 31, 2022 9:53:13 PM exercise.servlet.SessionServlet login
+INFO: User with shoshana.haley@hotmail.com logs in
+Oct 31, 2022 9:53:15 PM exercise.servlet.SessionServlet login
+INFO: User with suzann.barrows@hotmail.com logs in
+Oct 31, 2022 9:53:15 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-auto-1-57758"]
+Oct 31, 2022 9:53:15 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Oct 31, 2022 9:53:15 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesObjectStreamClassCaches
+WARNING: Failed to clear soft references from ObjectStreamClass$Caches for web application [ROOT]
+java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2331)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2306)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1675)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1605)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:455)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5505)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1445)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1434)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Oct 31, 2022 9:53:15 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-auto-1-57758"]
