@@ -51,6 +51,10 @@ public final class App {
                     path("articles", () -> {
                         // GET /articles
                         get(ArticleController.listArticles);
+                        // GET /articles/new
+                        get("new", ArticleController.newArticle);
+                        // POST /articles
+                        post(ArticleController.createArticle);
                         path("{id}", () -> {
                             //GET /articles/{id}
                             get(ArticleController.showArticle);
@@ -67,10 +71,6 @@ public final class App {
                                 delete(ArticleController.destroyArticle);
                             });
                         });
-                        // GET /articles/new
-                        get("new", ArticleController.newArticle);
-                        // POST /articles
-                        post(ArticleController.createArticle);
                     });
                 });
         // END
