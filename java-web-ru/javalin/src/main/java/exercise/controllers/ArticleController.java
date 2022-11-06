@@ -8,6 +8,7 @@ import exercise.domain.query.QArticle;
 import exercise.domain.Article;
 import exercise.domain.Category;
 import exercise.domain.query.QCategory;
+import io.javalin.http.HttpCode;
 
 public final class ArticleController {
 
@@ -99,9 +100,9 @@ public final class ArticleController {
                 .set("body", body)
                 .set("category", categoryId)
                 .update();
-        //article.update();
 
         ctx.sessionAttribute("flash", "Статья успешно обновлена");
+        ctx.status(HttpCode.FOUND);
         ctx.redirect("/articles");
         // END
     };
@@ -129,6 +130,7 @@ public final class ArticleController {
                 .findOne();
 
         article.delete();
+        ctx.status(HttpCode.FOUND);
         ctx.redirect("/articles");
         // END
     };
