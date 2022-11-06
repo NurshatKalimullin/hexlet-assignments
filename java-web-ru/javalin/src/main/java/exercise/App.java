@@ -62,13 +62,13 @@ public final class App {
                                 //GET /articles/{id}/edit
                                 get(ArticleController.editArticle);
                                 //POST /articles/{id}/edit
-                                patch(ArticleController.updateArticle);
+                                post(ArticleController.updateArticle);
                             });
                             path("delete", () -> {
                                 //GET /articles/{id}/delete
                                 get(ArticleController.deleteArticle);
                                 //POST /articles/{id}/delete
-                                delete(ArticleController.destroyArticle);
+                                post(ArticleController.destroyArticle);
                             });
                         });
                     });
