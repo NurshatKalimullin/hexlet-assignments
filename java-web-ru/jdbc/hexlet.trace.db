@@ -1,0 +1,45 @@
+2022-11-04 21:27:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-04 21:27:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-04 21:32:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-06 16:28:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-06 16:35:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-06 19:55:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-06 20:05:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-06 20:05:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-06 20:05:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-06 20:15:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-06 20:20:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-07 21:55:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-07 21:57:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-08 21:59:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
+2022-11-11 23:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found; SQL statement:
+SELECT id, title, body FROM companies LIMIT 10 OFFSET ? [42102-200]
