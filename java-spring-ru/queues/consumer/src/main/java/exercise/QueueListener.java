@@ -34,8 +34,8 @@ public class QueueListener {
         // и создавать аккаунт или отправлять пользователю письмо или смс
         // Получатель никак не зависит от отправителя, отправитель сообщения даже не знает,
         // кто и как будет использовать полученное сообщение
-        LOGGER.info(message);
-        System.out.println(message);
+        messages.add(message);
+        LOGGER.info("Message is added!");
     }
     // END
 }
