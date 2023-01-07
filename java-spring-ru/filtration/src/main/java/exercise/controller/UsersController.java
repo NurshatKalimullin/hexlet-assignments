@@ -22,26 +22,31 @@ public class UsersController {
     private UserRepository userRepository;
 
     // BEGIN
-    @GetMapping(path = "")
-    public Iterable<User> getUsers(@RequestParam(required = false) String firstName,
-                                   @RequestParam(required = false) String lastName) {
-        System.out.println("Start request");
-        if (firstName == null && lastName == null) {
-            return userRepository.findAll();
-        } else if (firstName == null) {
-            return userRepository.findAll(
-                    QUser.user.lastName.containsIgnoreCase(lastName));
-        } else if (lastName == null) {
-            return userRepository.findAll(
-                    QUser.user.firstName.containsIgnoreCase(firstName));
-        } else {
-            return userRepository.findAll(
-                    QUser.user.firstName.containsIgnoreCase(firstName)
-                            .and(
-                                    QUser.user.lastName.containsIgnoreCase(lastName)
-                            )
-            );
-        }
+//    @GetMapping(path = "")
+//    public Iterable<User> getUsers(@RequestParam(required = false) String firstName,
+//                                   @RequestParam(required = false) String lastName) {
+//        System.out.println("Start request");
+//        if (firstName == null && lastName == null) {
+//            return userRepository.findAll();
+//        } else if (firstName == null) {
+//            return userRepository.findAll(
+//                    QUser.user.lastName.containsIgnoreCase(lastName));
+//        } else if (lastName == null) {
+//            return userRepository.findAll(
+//                    QUser.user.firstName.containsIgnoreCase(firstName));
+//        } else {
+//            return userRepository.findAll(
+//                    QUser.user.firstName.containsIgnoreCase(firstName)
+//                            .and(
+//                                    QUser.user.lastName.containsIgnoreCase(lastName)
+//                            )
+//            );
+//        }
+//    }
+
+    @GetMapping("")
+    public Iterable<User> getUsersByFullName(@QuerydslPredicate(root = User.class) Predicate predicate) {
+        return userRepository.findAll(predicate);
     }
 
 
