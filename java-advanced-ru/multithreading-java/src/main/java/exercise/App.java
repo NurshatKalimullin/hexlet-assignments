@@ -11,8 +11,8 @@ class App {
     public static Map<String, Integer> getMinMax(int[] numbers) {
 
         // Создаём экземпляр потока
-        ThreadExample threadMin = new MinThread();
-        ThreadExample threadMax = new MaxThread();
+        ThreadExample threadMin = new MinThread(numbers);
+        ThreadExample threadMax = new MaxThread(numbers);
         // Запускаем поток при помощи метода start()
         // После этого начинает выполняться метод run() потока
         threadMin.start();
