@@ -1,5 +1,7 @@
 package exercise;
 
+import java.util.Arrays;
+
 // BEGIN
 public class MinThread extends Thread {
 

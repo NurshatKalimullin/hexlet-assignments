@@ -1,5 +1,6 @@
 package exercise;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 import java.util.logging.Level;
