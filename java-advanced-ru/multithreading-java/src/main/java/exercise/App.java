@@ -1,6 +1,5 @@
 package exercise;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 import java.util.logging.Level;
@@ -12,8 +11,8 @@ class App {
     public static Map<String, Integer> getMinMax(int[] numbers) {
 
         // Создаём экземпляр потока
-        ThreadExample threadMin = new MinThread(numbers);
-        ThreadExample threadMax = new MaxThread(numbers);
+        MinThread threadMin = new MinThread(numbers);
+        MaxThread threadMax = new MaxThread(numbers);
         // Запускаем поток при помощи метода start()
         // После этого начинает выполняться метод run() потока
         threadMin.start();
