@@ -1,7 +1,5 @@
 package exercise;
 
-import org.apache.commons.io.FileUtils;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.CompletableFuture;
@@ -13,14 +11,6 @@ import java.util.concurrent.CompletionException;
 class App {
 
     // BEGIN
-    public static CompletableFuture<Long> getDirectorySize(String dest) {
-        return CompletableFuture.supplyAsync(() -> {
-            Path fullPath = getPath(dest);
-            return FileUtils.sizeOfDirectory(fullPath.toFile());
-        });
-    }
-
-
     public static CompletableFuture<String> unionFiles(String firstSourceFilePath,
                                                        String secondSourceFilePath,
                                                        String resultFilePath){

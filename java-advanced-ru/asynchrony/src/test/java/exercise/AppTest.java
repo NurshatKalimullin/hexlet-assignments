@@ -46,6 +46,5 @@ class AppTest {
     }
 
     // BEGIN
-    
     // END
 }
